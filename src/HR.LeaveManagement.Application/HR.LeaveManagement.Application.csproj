@@ -8,11 +8,20 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\LeaveAllocation\Commands\" />
+    <Folder Include="Features\LeaveAllocation\Queries\" />
+    <Folder Include="Features\LeaveRequest\Commands\" />
+    <Folder Include="Features\LeaveRequest\Queries\GetLeaveRequestDetails\" />
   </ItemGroup>
 
 </Project>
